@@ -29,52 +29,33 @@ $display-weight: 900;
 $display-spacing: 0.15em;
 $display-title-size: 4rem;
 
-// Define font variation settings as variables
-$font-opsz-body: 10;
-$font-soft-body: 1;
-$font-wght-body: 300;
-$font-wonk-body: 1;
+/* Define a variable for the common optical size value */
+$font-opsz: 10;
 
-$font-opsz-heading: 10;
-$font-soft-heading: 0;
-$font-wght-heading: 700;
-$font-wonk-heading: 1;
-
-$font-opsz-p: 10;
-$font-soft-p: 1;
-$font-wght-p: 200;
-$font-wonk-p: 1;
-
-$font-opsz-p: 10;
-$font-soft-p: 1;
-$font-wght-p: 200;
-$font-wonk-p: 1;
-
-// Apply font-variation-settings to different elements
 body {
-    font-variation-settings: "opsz"#{$font-opsz-body},
-    "soft"#{$font-soft-body},
-    "wght"#{$font-wght-body},
-    "wonk"#{$font-wonk-body};
+    font-variation-settings: 'opsz'#{$font-opsz},
+    'soft' 1,
+    'wght' 300,
+    'wonk' 1;
 }
 
-h1 {
-    font-variation-settings: "opsz"#{$font-opsz-heading},
-    "soft"#{$font-soft-heading},
-    "wght"#{$font-wght-heading},
-    "wonk"#{$font-wonk-heading};
+header {
+    font-variation-settings: 'opsz'#{$font-opsz},
+    'soft' 0,
+    'wght' 700,
+    'wonk' 1;
 }
 
-.p {
-    font-variation-settings: "opsz"#{$font-opsz-p},
-    "soft"#{$font-soft-p},
-    "wght"#{$font-wght-p},
-    "wonk"#{$font-wonk-p};
+.header__desc {
+    font-variation-settings: 'opsz'#{$font-opsz},
+    'soft' 1,
+    'wght' 200,
+    'wonk' 1;
 }
 
-.p {
-    font-variation-settings: "opsz"#{$font-opsz-p},
-    "soft"#{$font-soft-p},
-    "wght"#{$font-wght-p},
-    "wonk"#{$font-wonk-p};
+.header__desc--first {
+    font-variation-settings: 'opsz'#{$font-opsz},
+    'soft' 1,
+    'wght' 200,
+    'wonk' 1;
 }
